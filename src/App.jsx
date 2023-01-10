@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import './App.css';
-//import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const App = () => {
@@ -14,7 +13,6 @@ const App = () => {
 
   const onPop = () => {
     const tempArray = [...arrayValue];
-    //tempArray.splice(tempArray.length - 1, 1);
     tempArray.pop()
     setArrayValue(tempArray);
   };
@@ -32,7 +30,7 @@ const App = () => {
       </div>
       <div className='pushpopContainer'>
         <div className='pushBtn' onClick={onPush}>PUSH</div>
-        <div className='popBtn' onClickCapture={onPop}>POP</div>
+        <div className='popBtn' onClick={onPop}>POP</div>
       </div>
     </div>
   );
