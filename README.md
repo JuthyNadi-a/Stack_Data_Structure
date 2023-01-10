@@ -1,1 +1,1 @@
-# ToDo App with stack data structure
+# Stack data structure
